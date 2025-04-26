@@ -2,24 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    padding: 0;
 }
 
 html {
     height: 100vh;
-    font-family: "inter";
+    font-family: "Inter";
     display: flex;
     justify-content: center;
     align-items: center;
     background: hsl(0, 0%, 8%);
+    padding: 2rem 0;
 }
 img {
-    width: 40%;
+    width: 30%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 1em;
 }
 h1 {
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
+    font-size: 1.5rem;
     color: hsl(0, 0%, 100%);
 }
 
@@ -31,7 +34,7 @@ h1 {
     font-weight: bold;
     color: hsl(75, 94%, 57%);
     margin-bottom: 1em;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
 .caption {
@@ -47,11 +50,11 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 400px;
     width: 95%;
     display: flex;
     background: hsl(0, 0%, 12%);
-    padding: 1em;
+    padding: 2rem 1.5em;
     border-radius: 6px;
 }
 
@@ -70,9 +73,21 @@ h1 {
     color: hsl(0, 0%, 100%);
     font-weight: bold;
     text-align: center;
-    margin: 0.5em;
+    margin: 0.4em;
     border-radius: 6px;
+    font-size: 0.85rem;
 }
 .box p {
     color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+.box:active {
+    background: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+}
+.box:hover {
+    background: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+    cursor: pointer;
 }
